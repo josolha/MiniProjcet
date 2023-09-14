@@ -15,6 +15,7 @@ public class BoardDAO {
 	
 	// DB에 연결하기 위해 Connection 객체 생성
 	public void getConnection() {
+		System.out.println("getConnection");
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
 		String user = "hr";
 		String pw = "hr";

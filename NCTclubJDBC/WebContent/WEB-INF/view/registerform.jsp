@@ -3,22 +3,22 @@
     
 
 <!-- header html -->
-<jsp:include page="inc/header.jsp" />
+<%@ include file="inc/header.jsp"%>
 
 
 <!-- main html -->
 <div class="container shadow py-5 w-25 rounded p-5 my-auto">
 <h2 class="text-center mb-3">회원가입</h2>
-    <form action="/user/register" method="post">
-        <div class="form-group row">
-            <label for="userId" class="col-sm-3 col-form-label text-nowrap">User ID:</label>
+    <form action='${ctxPath}/user/register' method='post'>
+            <div class="form-group row">
+            <label for="userId" class="col-sm-3 col-form-label text-nowrap">아이디:</label>
             <div class="col-sm-9">
                 <input type="text" class="form-control" id="userId" name="userId" required>
             </div>
         </div>
 
         <div class="form-group row">
-            <label for="password" class="col-sm-3 col-form-label text-nowrap">Password:</label>
+            <label for="password" class="col-sm-3 col-form-label text-nowrap">비밀번호:</label>
             <div class="col-sm-9">
                 <input type="password" class="form-control" id="password" name="password" required>
             </div>
@@ -70,4 +70,4 @@
     </form>
 </div>
 <!-- footer html -->
-<jsp:include page="inc/footer.jsp" />
+<%@ include file="inc/footer.jsp" %>
