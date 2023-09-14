@@ -31,7 +31,6 @@ public class UserDAO {
 	 * 
 	 * e.printStackTrace(); } }
 	 */
-	
 	// Connection Pool에 있는 Connection 객체 가져오기
 	// JNDI, DBCP
 	public Connection getConnection() {
