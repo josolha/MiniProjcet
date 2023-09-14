@@ -2,6 +2,8 @@ package com.nctclub.model;
 
 import java.sql.Date;
 
+import com.nctclub.utils.UserRole;
+
 public class UserDTO {
 	    private Long id;  // Assuming that NUMBER type in Oracle is mapped to Long in Java
 	    private String userId;

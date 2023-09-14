@@ -1,4 +1,4 @@
-package com.nctclub.model;
+package com.nctclub.utils;
 
 public enum UserRole {
     USER("USER"),
