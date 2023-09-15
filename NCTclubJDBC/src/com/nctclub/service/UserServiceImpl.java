@@ -51,5 +51,11 @@ public class UserServiceImpl implements UserService {
 	    }
 	    return null;
 	}
+	
+	@Override
+	public UserDTO idCheck(String userId) {
+		
+		return mapper.idCheck(userId);
+	}
 
 }

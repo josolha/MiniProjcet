@@ -23,7 +23,7 @@
                 <input type="password" class="form-control" id="password" name="password" required>
             </div>
         </div>
-
+		<p class="text-danger">${errorMessage}</p>	
         <button type="submit" class="btn btn-dark d-block mx-auto">로그인하기</button>
     </form>
 </div>

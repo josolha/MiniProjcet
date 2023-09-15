@@ -11,7 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Registration</title>
     <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+  
+	  
 </head>
 <body class="d-flex flex-column vh-100">
 

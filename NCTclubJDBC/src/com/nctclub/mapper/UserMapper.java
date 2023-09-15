@@ -14,5 +14,8 @@ public interface UserMapper {
 	
 	// 전체 회원 선택
 	public List<UserDTO> selectAllusers(); 
+	
+	//아이디 체크
+	public UserDTO idCheck(String userId);
 
 }
