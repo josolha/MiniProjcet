@@ -1,14 +1,14 @@
 CREATE TABLE USERS (
    id NUMBER PRIMARY KEY,
-   user_id VARCHAR2(50) UNIQUE NOT NULL,
+   userId VARCHAR2(50) UNIQUE NOT NULL,
    password VARCHAR2(200) NOT NULL,
-   full_name VARCHAR2(100) NOT NULL,
+   username VARCHAR2(100) NOT NULL,
    nickname VARCHAR2(50) NOT NULL,
    birthdate DATE,
    phone VARCHAR2(15),
    email VARCHAR2(100),
    address VARCHAR2(300),
-   user_role CHAR(5) CHECK (user_role IN ('USER', 'ADMIN')),
+   userrole CHAR(5) CHECK (userrole IN ('USER', 'ADMIN')),
    regdate DATE DEFAULT SYSDATE
 );
 create SEQUENCE USERS_SEQ
@@ -30,9 +30,12 @@ VALUES (USERS_SEQ.NEXTVAL, 'jane_doe', 'password456', 'Jane Doe', 'Janey', TO_DA
 
 select * from USERS;
 
+drop sequence USERS_SEQ;
 
+drop table users;
 
+commit;
+desc users;
 
-
-INSERT INTO USERS (id,user_id, password, full_name, nickname, birthdate, phone, email, address, user_role, regdate)
+INSERT INTO USERS (id,userid, password, username, nickname, birthdate, phone, email, address, userrole, regdate)
 VALUES (USERS_SEQ.NEXTVAL,'jane_doe1', 'password2456', 'Jane 3Doe', 'J4aney', TO_DATE('1992-08-20', 'YYYY-MM-DD'), '123-456-7892', 'jane.doe@email.com', '1234 Oak Street, Anytown', 'USER', SYSDATE);

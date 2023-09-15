@@ -3,7 +3,7 @@
     
 
 <!-- header html -->
-<%@ include file="inc/header.jsp"%>
+<%@ include file="inc/header.jsp" %>
 
 
 <!-- main html -->
@@ -23,11 +23,18 @@
                 <input type="password" class="form-control" id="password" name="password" required>
             </div>
         </div>
-
-        <div class="form-group row">
-            <label for="fullName" class="col-sm-3 col-form-label text-nowrap">Full Name:</label>
+        
+<!--         <div class="form-group row">
+            <label for="passwordconfirm" class="col-sm-3 col-form-label text-nowrap">비밀번호 재확인:</label>
             <div class="col-sm-9">
-                <input type="text" class="form-control" id="fullName" name="fullName" required>
+                <input type="password" class="form-control" id="passwordconfirm" name="passwordconfirm" required>
+            </div>
+        </div>
+ -->
+        <div class="form-group row">
+            <label for="username" class="col-sm-3 col-form-label text-nowrap">Full Name:</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="username" name="username" required>
             </div>
         </div>
 

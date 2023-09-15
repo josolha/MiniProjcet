@@ -5,12 +5,16 @@
   
   
  <mapper namespace="com.nctclub.mapper.UserMapper">
- 	<insert id="insert" parameterType="userDTO">
-		INSERT INTO users(subject, contents, writer)
-		VALUES(#{subject}, #{contents}, #{writer}) 		
-	</insert>
+ 	 <insert id="insert" parameterType="userDTO">
+        INSERT INTO users (id, userid, password, username, nickname, birthdate, phone, email, address, userrole, regdate)
+        VALUES (USERS_SEQ.NEXTVAL, #{userId}, #{password}, #{username}, #{nickname}, #{birthdate}, #{phone}, #{email}, #{address}, #{userrole}, SYSDATE)
+    </insert>
 	
 	<select id="userLogin" parameterType="userDTO" resultType="userDTO">
-  		SELECT user_id, password, nickname FROM users WHERE user_id = #{user_id}
+  		SELECT * FROM users WHERE userid = #{userId}
+  	</select>
+  	
+  	<select id="selectAllusers" resultType="userDTO">
+  		SELECT * FROM users
   	</select>
  </mapper>

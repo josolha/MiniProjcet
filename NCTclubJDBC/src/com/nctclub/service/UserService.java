@@ -8,6 +8,6 @@ public interface UserService {
 	
 	int userRegister(UserDTO dto);
 	
-	boolean userLogin(UserDTO dto, HttpServletRequest req);
+	UserDTO userLogin(UserDTO dto);
 
 }
